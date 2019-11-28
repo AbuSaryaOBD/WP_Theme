@@ -228,6 +228,10 @@ section {
     padding: 80px 0;
 }
 
+section.main-content {
+    padding: 40px 0;
+}
+
 .section-header {
     text-align: center;
 }
@@ -549,6 +553,23 @@ footer li.signup-link a:hover {
     border-top: solid 1px #eee;
 }
 
+
+
+/* ============== RESOURCES =============== */
+
+.resource {
+    width: 31.33333333%;
+    float: left;
+    margin: 0 3% 40px 0;
+}
+
+.resource:nth-child(3n){
+    margin-right: 0;
+}
+
+
+
+
 /* ============== CUSTOME ICON SPRITES =============== */
 
 i.ci {
@@ -607,6 +628,34 @@ textarea {
     padding: 6px 12px;
 }
 
+input[type="submit"],
+button[type="submit"] {
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.33;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: none;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+    outline: none;
+    border: none;
+    background: #aaa;
+}
 
 /* ==============MEDIA QUERIES=============== */
 
@@ -628,6 +677,12 @@ textarea {
     #featurette iframe {
         height: 240px;
     }
+
+    .resource {
+        width: 48%;
+        margin-right: 2%;
+        min-height: 800px;
+    }
 }
 
 @media screen and (max-width : 568px) {
@@ -639,6 +694,12 @@ textarea {
 
     #instructor .num span {
         font-size: 16px;
+    }
+
+    .resource {
+        width: 100%;
+        margin-right: 0;
+        min-height: 0;
     }
 }
 
